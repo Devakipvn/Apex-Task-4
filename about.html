@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATCHIPULUSU VENKATA NAGA DEVAKI - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p><h2>About Me</h2></p>
+
+        <!-- Education Section -->
+        <div class="education-container">
+            <h3>Education</h3>
+            <div class="education-box" onclick="showEducationDetails('MCA')">
+                Master of Computer Applications (MCA)
+            </div>
+            <div class="education-box" onclick="showEducationDetails('BSC')">
+                B.Sc Computer Science
+            </div>
+        </div>
+
+        <!-- Education Details -->
+        <div id="education-details" class="education-details" style="display: none;">
+            <h4 id="education-title"></h4>
+            <p id="education-description"></p>
+            <button onclick="closeEducationDetails()">Close</button>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills">
+            <h2><u>Skills</h2></u>
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C Programming" class="skill-logo"><br>
+                <h4>C Programming</h4>
+                <h5><p><b>Experienced in C programming with a strong understanding of algorithms and data structures.</p></b></h5>
+            </div>
+            <div class="skill">
+                <img src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png" alt="Java" class="skill-logo"><br>
+                <h4>Java</h4>
+                <h5><b><p>Skilled in Java for developing object-oriented applications, including web and desktop apps.</p></b></h5>
+            </div>
+            <div class="skill">
+                <img src="https://banner2.cleanpng.com/20181128/cbr/kisspng-python-programming-basics-for-absolute-beginners-michigan-python-user-group-5-jul-2-18-1713916787253.webp" alt="Python" class="skill-logo"><br>
+                <h4>Python</h4>
+                <h5><b><p>Proficient in Python, used for both scripting and building applications, including AI and ML projects.</p></b></h5>
+            </div>
+            <div class="skill">
+                <img src="https://logowik.com/content/uploads/images/css3-html51661.jpg" alt="HTML & CSS" class="skill-logo"><br>
+                <h4>HTML & CSS</h4>
+                <h5><b><p>Experienced in creating responsive, interactive websites with HTML and CSS.</p></b></h5>
+            </div>
+            <div class="skill">
+                <img src="https://i.postimg.cc/W3yVK5Zf/pngwing-com.png" alt="SQL" class="skill-logo"><br>
+                <h4>SQL</h4>
+                <h5><b><p>Proficient in SQL for designing and managing relational databases.</p></b></h5>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DevakiPvn. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

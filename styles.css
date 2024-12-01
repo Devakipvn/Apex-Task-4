@@ -1,0 +1,346 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.home-page {
+    background-color: #f4f4f4;
+    color: #333;
+    background: url('https://i.postimg.cc/hPyLYxZQ/Blue-and-White-Floral-Watercolor-Linktree-Background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(42, 67, 76);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+/* Ensure other pages have no background image */
+body:not(.home-page) {
+    background-image: none;
+    background-color: #cae4ec;
+}
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    
+    padding: 20px;
+    transition: top 0.3s;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-links a:hover {
+    color: #f0f0f0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1); /* Light background color on hover */
+    border-radius: 4px; /* Optional: rounded corners for hover effect */
+}
+
+/* Active link state */
+.navbar-links a:active {
+    color: #4CAF50; /* Change color when clicked */
+    background-color: rgba(76, 175, 80, 0.1); /* Light green background when clicked */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Active state shadow */
+}
+
+/* Active link using JavaScript */
+.navbar-links a.active {
+    color: #4CAF50; /* Green when active */
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center; 
+    padding: 50px;
+    
+}
+.home-text {
+    width: 60%;
+}
+.home-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.home-text p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    text-decoration: wavy;
+    transition-duration: baseline;
+}
+.home-image {
+    margin-top: 30px;
+    
+    
+}
+.home-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(124, 167, 188);
+}
+.contact-info {
+    margin-top: 20px;
+    text-align: end;
+}
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(0); /* To match dark background */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+}
+    
+/* About page styles */
+
+#about-text h2 {
+    font-size: 18px;
+    margin-top: 30px;
+}
+.education-container {
+    max-width: 600px; /* Sets the width of the container */
+    margin: 20px auto; /* Centers the container */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-box {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.education-box:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.education-details {
+    max-width: 600px; /* Matches the education container width */
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.skills {
+    margin: 20px 0;
+}
+
+.skills h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skill {
+    margin-bottom: 10px; /* Space between each skill */
+    text-align: center; /* Center align both title and description */
+    display: flex; /* Use flexbox for aligning logo and text */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align logo and text */
+}
+
+.skill h4 {
+    font-size: 18px; /* Skill name font size */
+    margin-bottom: 5px; /* Space between title and description */
+    color: #333; /* Skill name color */
+}
+
+.skill p {
+    font-size: 14px; /* Description font size */
+    color: #666; /* Softer color for description */
+    margin-top: 10px; /* Remove default paragraph margins */
+    text-align: center; /* Center-align description */
+}
+
+.skill-logo {
+    width: 40px; /* Smaller logo width */
+    height: 40px; /* Smaller logo height */
+    margin-bottom: 5px; /* Space below the logo */
+}
+
+/* Projects Section */
+#projects h2{
+    
+    margin-top: 30px;
+}
+
+#projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    background: #7fa8b4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 200px;
+    margin: 10px;
+    position: center;
+}
+.project:hover {
+    transform: translateY(-5px);
+    background-color: #dfe7e8;
+}
+
+.project-title {
+    font-size: 18px;
+    
+    font-weight: bold;
+    text-align: center;
+}
+/* Project Section Styling */
+.add-project-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-project-btn:hover {
+    background-color: #45a049;
+}
+
+/* Cancel and Save Buttons */
+.cancel-btn, .save-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.cancel-btn:hover, .save-btn:hover {
+    opacity: 0.8;
+}
+
+/* Project Detail Container */
+.project-detail-container {
+    position: center;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    background: #f5f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+    margin-top: 100px;
+}
+
+.project-detail-card h3 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.project-detail-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.project-title-input,
+.project-description-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #e48c8c;
+}
+/* Footer styles */
+footer {
+    background-color: #727070;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+    margin-top: 50px;
+    
+}
+

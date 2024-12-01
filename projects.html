@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATCHIPULUSU VENKATA NAGA DEVAKI - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <p><h2>Projects</p></h2>
+        <div id="projects-container">
+            <div class="project" onclick="showProjectDetails('Scientific Calculator', 'A project developed using Python and Tkinter, supporting advanced calculations like trigonometry and logarithms.')">
+                <div class="project-title">Scientific Calculator</div>
+            </div>
+            <div class="project" onclick="showProjectDetails('Sentiment Analysis', 'Analyzed hotel reviews using Python, NLP, and machine learning techniques.')">
+                <div class="project-title">Sentiment Analysis</div>
+            </div>
+            <div class="project" onclick="showProjectDetails('Interactive Weather App', 'Developed using HTML, CSS, JavaScript, and OpenMapAPI for fetching real-time weather data.')">
+                <div class="project-title">Interactive Weather App</div>
+            </div>
+            <div class="project" onclick="showProjectDetails('Sample Notepad', 'A Python-Tkinter-based notepad app with features like auto-save and customizable fonts.')">
+                <div class="project-title">Sample Notepad</div>
+            </div>
+        </div>
+        <!-- Button to add a new project -->
+        <button class="add-project-btn" onclick="showAddProjectForm()">Add New Project</button>
+
+        <!-- Project Detail Card -->
+        <div id="project-detail-container" class="project-detail-container">
+            <div class="project-detail-card">
+                <h3 id="project-title"></h3>
+                <p id="project-description-detail"></p>
+            </div>
+        </div>
+        <!-- Project Detail Card for Adding a New Project -->
+        <div id="project-detail-container" class="project-detail-container">
+            <div class="project-detail-card">
+                <h3 id="project-title"></h3>
+                <input type="text" id="new-project-title" class="project-title-input" placeholder="Enter Project Title">
+                <textarea id="new-project-description" class="project-description-input" rows="4" placeholder="Enter Project Description"></textarea>
+                <div>
+                    <button class="save-btn" onclick="saveNewProject()">Save</button>
+                    <button class="cancel-btn" onclick="cancelAddProject()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DevakiPvn. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
