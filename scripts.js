@@ -54,39 +54,6 @@ function showProjectDetails(title, description) {
     document.getElementById('project-detail-container').style.display = 'block';
 }
 
-// Show the form to add a new project
-function showAddProjectForm() {
-    document.getElementById('project-detail-container').style.display = 'block';
-    document.getElementById('new-project-title').value = '';
-    document.getElementById('new-project-description').value = '';
-}
-
-// Save the new project and add it to the list
-function saveNewProject() {
-    const title = document.getElementById('new-project-title').value;
-    const description = document.getElementById('new-project-description').value;
-    if (title && description) {
-        // Create new project element
-        const projectContainer = document.getElementById('projects-container');
-        const newProject = document.createElement('div');
-        newProject.classList.add('project');
-        newProject.onclick = () => showProjectDetails(title, description);
-        newProject.innerHTML = `<div class="project-title">${title}</div>`;
-        projectContainer.appendChild(newProject);
-
-        // Hide the add project form
-        cancelAddProject();
-    } else {
-        alert('Please fill in both the title and description!');
-    }
-}
-
-// Cancel adding the new project
-function cancelAddProject() {
-    document.getElementById('project-detail-container').style.display = 'none';
-}
-
-
 // Add fade-in animation
 document.head.insertAdjacentHTML(
     "beforeend",
